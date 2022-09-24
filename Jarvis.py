@@ -15,11 +15,11 @@ print('''
                                                                                           
 ''')
  
-name = input("Enter name: ")
+name = input("Enter name: ").capitalize()
 print("Hello", name, "I am JARVIS, your personal asssistant")
-IconPath = r"C:\Users\vipul\OneDrive\Desktop\Courses\Course\JARVIS 2.0\Python-JARVIS\Jarvis_logo_ico.ico"
+IconPath = r"Jarvis_logo_ico.ico"
 notification_title = 'JARVIS ACTIVATED!'  
-notification_message = (f'Hello {name} JARVIS is ready to be your assistant 🤖:) ')
+notification_message = (f'Hello {name} JARVIS is ready to be your assistant 🤖')
   
 notification.notify(  
     title = notification_title,  
@@ -30,9 +30,9 @@ notification.notify(
     )
 
 print("Do you prefer Sir or Miss")
-C = input()
+C = input().capitalize()
 print("Understood", C)
-IconPath = r"C:\Users\vipul\OneDrive\Desktop\Courses\Course\Python-JARVIS\Jarvis_logo_ico.ico"
+IconPath = r"Jarvis_logo_ico.ico"
 notification_title = 'HELLO'  
 notification_message = (f'Hello {C}')
   
@@ -46,15 +46,16 @@ notification.notify(
 
 while 1:
     print("How can I help you", C)
-    A = input().lower()
-    if A == ("hello") or A == ("hi") or A == ("hey") or A == ("jarvis"):
+    user_input = input().lower()
+    
+    if user_input == ("hello") or user_input == ("hi") or user_input == ("hey") or user_input == ("jarvis"):
         print("Hello", C)
 
-    elif A == ("open google") or A == ("open google"):
+    elif user_input == ("open google"):
         os.system('start chrome www.google.com')
         print("Opening chrome to google.com")
 
-    elif A == ("exit"):
+    elif user_input == ("exit"):
         print("Exiting in")
         print("3")
         time.sleep(1)
@@ -65,7 +66,7 @@ while 1:
         os.system('TASKKILL /F /IM py.exe')
         break
 
-    elif A == ("shutdown"):
+    elif user_input == ("shutdown"):
         print("Are you sure", C)
         Y = input("yes/no\n>>").lower()
         if Y == ("yes"):
@@ -74,7 +75,7 @@ while 1:
         else:
             print("Canceling shutdown", C)
             
-    elif A ==("restart"):
+    elif user_input ==("restart"):
         print("Are you sure",C)
         Y = input("yes/no\n>>").lower()
         if Y ==("yes"):
@@ -82,8 +83,8 @@ while 1:
         else:
             print("Cancelling Restart",C)
             
-    elif "add" or "subtract" or "multiply" or "divide" or "modulus" or "exponentiation" or "floor division" in A:
-        print("Do you want me to perform  arthimatic operations ?")
+    elif user_input in ["add" or "subtract" or "multiply" or "divide" or "modulus" or "exponentiation" or "floor division"]:
+        print("Do you want me to perform arthimatic operations ?")
         Y = input("yes/no\n>>").lower()
         if Y == ("yes"):
             print("Select the Operation to perform : \n1) Addition\n2) Subtraction\n3) Multiplication\n4) Division\n5) Modulus\n6) Exponential\n7) Floor Division\n>>")
@@ -119,15 +120,15 @@ while 1:
             else:
                 print("Invalid number")
                       
-        elif "open" or "application" in A:
-            print("Do you want me to open application ?")
-            Y = input("yes/no\n>>").lower()
-            if Y == ("yes"):
-                Y = input("ENTER APPLICATION TO OPEN: ").strip()
-            if input:
-                run(Y)
-            else:
-                print("Please check the application name you have typed")
+    elif user_input in ["open" or "application"]:
+        print("Do you want me to open an application?")
+        Y = input("yes/no\n>>").lower()
+        if Y == ("yes"):
+            app = input("ENTER APPLICATION TO OPEN: ").strip()
+        if input:
+            run(app)
+        else:
+            print("Please check the application name you have typed")
             
     else:
         print("I'm not sure I understand", C)
