@@ -17,7 +17,7 @@ print('''
  
 name = input("Enter name: ")
 print("Hello", name, "I am JARVIS, your personal asssistant")
-IconPath = r"C:\Users\vipul\OneDrive\Desktop\Courses\Course\Python-JARVIS\Jarvis_logo_ico.ico"
+IconPath = r"C:\Users\vipul\OneDrive\Desktop\Courses\Course\JARVIS 2.0\Python-JARVIS\Jarvis_logo_ico.ico"
 notification_title = 'JARVIS ACTIVATED!'  
 notification_message = (f'Hello {name} JARVIS is ready to be your assistant 🤖:) ')
   
