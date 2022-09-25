@@ -1,15 +1,28 @@
-# Python-JARVIS
-JARVIS like asssistant in python.
-<br>
-The following must be installed before using Jarvis
-1 - OS
-2 - Time module
-3 - Plyer
-4 - App Opener
-5 - Beautiful Soup
-6 - Requests
-<br>
-The requirements of above modules are given in requirements.txt you can simply run the command 
-"pip install-requirements.txt" and it will install all the modules that are required.
-<br>
-<h3>This ONLY works properly on windows</h3>
+# JARVIS 2.0
+
+JARVIS 2.0 is a assistant designed for windows computer to perform some task based on user input
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requirements.txt.
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+```python
+# Perform user interaction 
+# Can send desktop notification
+# Can shutdown and restart the computer
+# Can open any installed application on the computer
+# Can perform arithmetic operation
+# Can check the weather condition of you preferred city
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## NOTE
+This only works on windows till now .
