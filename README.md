@@ -26,3 +26,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## NOTE
 This only works on windows till now .
+=======
+# Python-JARVIS
+JARVIS like asssistant in python.
+<br>
+You must install os, time, plyer and AppOpener for python.
+<br>
+<h3>This ONLY works properly on windows</h3>

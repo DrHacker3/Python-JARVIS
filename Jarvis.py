@@ -157,6 +157,7 @@ while 1:
         city = city+" weather"
         weather(city)
         print("Have a Nice Day:)")
+
             
     else:
         print("I'm not sure I understand", C)
