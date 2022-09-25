@@ -19,6 +19,10 @@ pip install -r requirements.txt
 # Can open any installed application on the computer
 # Can perform arithmetic operation
 # Can check the weather condition of you preferred city
+# Can play video from youtube
+# Can schedule a whatsapp message
+# Can play a game with user
+# Can show the help command
 ```
 
 ## Contributing
@@ -30,6 +34,6 @@ This only works on windows till now .
 # Python-JARVIS
 JARVIS like asssistant in python.
 <br>
-You must install os, time, plyer and AppOpener for python.
+You must install os, time, plyer , AppOpener , BeautifulSoup , requests , pywhatkit and random for python.
 <br>
 <h3>This ONLY works properly on windows</h3>
