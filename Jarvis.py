@@ -161,7 +161,6 @@ while 1:
         weather(city)
         print("Have a Nice Day:)")
         
-        user_input = input()
 
     elif user_input in ["youtube"]:
         try:
