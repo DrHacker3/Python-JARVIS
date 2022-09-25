@@ -4,6 +4,9 @@ from plyer import notification
 from AppOpener import run 
 from bs4 import BeautifulSoup
 import requests
+import numbers
+import pywhatkit
+import random
 
 os.system("color 0c")
 print('''
@@ -157,6 +160,130 @@ while 1:
         city = city+" weather"
         weather(city)
         print("Have a Nice Day:)")
+        
+        user_input = input()
+
+    elif user_input in ["youtube"]:
+        try:
+            user_input = input("Enter the video name to play : ")
+            pywhatkit.playonyt(user_input)
+            print("Playing")
+
+        except:
+            print("An unexpected error occurred")
+            
+    elif user_input in ["whatsapp"]:
+        numberr = input("Enter the number with country code : ")
+        message = input("Enter the message you want to send :\n")
+        hour = int(input("Enter the hour in 24 hour fomat :\n"))
+        minute = int(input("Enter the minute :\n"))
+        pywhatkit.sendwhatmsg(numberr,
+             message,
+             hour, minute)
+        
+    elif user_input in ["game"]:
+        print("I can play 2 games : \n1- Snake Water Gun\n2- Random Number Guess")
+        Y = int(input())
+        if Y == (1):
+            print('''
+           .---. .-. .-.  .--.  ,-. .-.,---.   .-.  .-.  .--.  _______ ,---.  ,---.      ,--,   .-. .-..-. .-. 
+          ( .-._)|  \| | / /\ \ | |/ / | .-'   | |/\| | / /\ \|__   __|| .-'  | .-.\   .' .'    | | | ||  \| | 
+         (_) \   |   | |/ /__\ \| | /  | `-.   | /  \ |/ /__\ \ )| |   | `-.  | `-'/   |  |  __ | | | ||   | | 
+         _  \ \  | |\  ||  __  || | \  | .-'   |  /\  ||  __  |(_) |   | .-'  |   (    \  \ ( _)| | | || |\  | 
+        ( `-'  ) | | |)|| |  |)|| |) \ |  `--. |(/  \ || |  |)|  | |   |  `--.| |\ \    \  `-) )| `-')|| | |)| 
+         `----'  /(  (_)|_|  (_)|((_)-'/( __.' (_)   \||_|  (_)  `-'   /( __.'|_| \)\   )\____/ `---(_)/(  (_) 
+                (__)            (_)   (__)                            (__)        (__) (__)           (__)     
+''')
+            def Gamewin(a,b):
+        
+                if a == b:
+                    return None
+
+                    
+                elif a == 's':
+                    if b == 'w':
+                        return False
+                    elif b == 'g':
+                        return True
+
+                        
+                    elif a == 'w':
+                     if b == 'g':
+                        return False
+                    elif b == 's':
+                        return True
+
+                        
+                    elif a == 'g':
+                     if b == 's':
+                        return False
+                    elif b== 'w':
+                        return True
+
+            print("Jarvis Turn: Snake(s) Water(w) or Gun(g)")    
+            randomNo = random.randint(1,3)    
+            if randomNo == 1:
+                a = 's'
+            elif randomNo == 2:
+                a = 'w'
+            elif randomNo == 3:
+                a = 'g'
+            
+            b=input("Your Turn: Snake(s) Water(w) or Gun(g)")
+            c = Gamewin(a,b)
+            print(f"Jarvis Chose {a}")
+            print(f"You Chose {b}")
+            if c == None:
+                print("The game is a tie")
+            elif c:
+                print("You Win!")
+            else:
+                print("You loose!")
+        
+        if Y == (2):
+            print('''
+      ____     _    _   _ ____   ___  __  __   _   _ _   _ __  __ ____  _____ ____     ____ _   _ _____ ____ ____  
+     |  _ \   / \  | \ | |  _ \ / _ \|  \/  | | \ | | | | |  \/  | __ )| ____|  _ \   / ___| | | | ____/ ___/ ___| 
+     | |_) | / _ \ |  \| | | | | | | | |\/| | |  \| | | | | |\/| |  _ \|  _| | |_) | | |  _| | | |  _| \___ \___ \ 
+     |  _ < / ___ \| |\  | |_| | |_| | |  | | | |\  | |_| | |  | | |_) | |___|  _ <  | |_| | |_| | |___ ___) ___) |
+     |_| \_/_/   \_|_| \_|____/ \___/|_|  |_| |_| \_|\___/|_|  |_|____/|_____|_| \_\  \____|\___/|_____|____|____/ 
+                                                                                                               
+''')
+            randNumber = random.randint(1,100)
+            userGuess = None
+            guesses = 0
+
+            while (userGuess != randNumber):
+                userGuess = int(input("Enter your guess:"))
+                guesses += 1
+                if (userGuess == randNumber):
+                    print("You guessed it right")
+                else:
+                    if(userGuess>randNumber):
+                        print("You guessed it wrong! Enter a smaller number")
+                    else:
+                        print("You guessed it wrong! Enter a larger number")
+
+            print(f"You guessed the number in {guesses} guesses")
+            
+    elif user_input == ("help"):
+        print("It Seems That You Need Help")
+        time.sleep(1)
+        print("\nSo Jarvis could perform the folllowing tasks with following command")
+        time.sleep(1)
+        print('''\n
+                   "hello"  --------->  Intracts with user
+                   "open google"  --->  Opens google in browser
+                   "exit"  ---------->  Jarvis exits
+                   "shutdown"  ------>  Shutdowns the system
+                   "restart"  ------->  Restarts the system
+                   "add"  ----------->  Perform arthimatic operations
+                   "open"  ---------->  Can open any installed applications
+                   "weather"  ------->  Checks the weather of your city
+                   "youtube"  ------->  Plays the video from youtube
+                   "whatsapp"  ------>  Schedule whatsapp's message
+                   "game"  ---------->  Can play games with JARIVS
+                   "help"  ---------->  Shows all the commands of JARVIS''')
             
     else:
         print("I'm not sure I understand", C)
