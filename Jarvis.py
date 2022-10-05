@@ -115,6 +115,7 @@ while 1:
                 B = int(input("Enter second number : "))
                 print("The sum of two numbers are : ",A+B)
             elif Y ==("2"):
+                # This set of code is responsible for performing the subtraction in jarvis
                 A = int(input("Enter first number : "))
                 B = int(input("Enter second number : "))
                 print("The subtraction of two numbers are : ",A-B)
