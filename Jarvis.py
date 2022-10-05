@@ -97,6 +97,8 @@ while 1:
         Y = input("yes/no\n>>").lower()
         if Y ==("yes"):
             os.system('shutdown /r')
+        
+        # if the user cancel restarts then it prints cancelling restarts
         else:
             print("Cancelling Restart",C)
             
