@@ -68,6 +68,7 @@ while 1:
         os.system('start chrome www.google.com')
         print("Opening chrome to google.com")
 
+    # if the user enters the exit command then the jarvis performs the 3 second animation and exits the jarvis
     elif user_input == ("exit"):
         print("Exiting in")
         print("3")
