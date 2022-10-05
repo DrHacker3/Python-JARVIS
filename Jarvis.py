@@ -53,6 +53,7 @@ notification.notify(
     toast = False  
     )
 
+# Asks for user to enter the command for the jarvis to acccess the features of it
 while 1:
     print("How can I help you", C)
     user_input = input().lower()
