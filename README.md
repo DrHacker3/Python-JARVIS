@@ -22,6 +22,7 @@ pip install -r requirements.txt
 # Can play video from youtube
 # Can schedule a whatsapp message
 # Can play a game with user
+# Can get details about the phone number
 # Can show the help command
 ```
 
