@@ -325,7 +325,8 @@ while 1:
                    "youtube"  ------->  Plays the video from youtube
                    "whatsapp"  ------>  Schedule whatsapp's message
                    "game"  ---------->  Can play games with JARIVS
-                   "help"  ---------->  Shows all the commands of JARVIS''')
+                   "help"  ---------->  Shows all the commands of JARVIS
+                   "phonenumber"  --->  Gets the detail about phonenumber''')
             
     else:
       # if the above command is not entered then it prints the following line
