@@ -296,6 +296,7 @@ while 1:
             print(f"You guessed the number in {guesses} guesses")
             
     elif user_input == ("help"):
+        # Help command is for displaying all the commands a user can input for jarvis to work 
         print("It Seems That You Need Help")
         time.sleep(1)
         print("\nSo Jarvis could perform the folllowing tasks with following command")
