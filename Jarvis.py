@@ -44,6 +44,7 @@ IconPath = r"Jarvis_logo_ico.ico"
 notification_title = 'HELLO'  
 notification_message = (f'Hello {C}')
   
+# send the notification with a messae with time of 1 second 
 notification.notify(  
     title = notification_title,  
     message = notification_message,  
