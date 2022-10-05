@@ -87,6 +87,7 @@ while 1:
         if Y == ("yes"):
             os.system('shutdown /p')
 
+        # if the user cancels the shutdown then it prints canceling shutdown
         else:
             print("Canceling shutdown", C)
             
