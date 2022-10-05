@@ -26,7 +26,8 @@ print("Hello", name, "I am JARVIS, your personal asssistant")
 IconPath = r"Jarvis_logo_ico.ico"
 notification_title = 'JARVIS ACTIVATED!'  
 notification_message = (f'Hello {name} JARVIS is ready to be your assistant 🤖')
-  
+
+# Sends a notification.
 notification.notify(  
     title = notification_title,  
     message = notification_message,  
