@@ -187,6 +187,7 @@ while 1:
         print("Have a Nice Day:)")
         
 
+    # This set of code can play any video from youtube it is basically the search bar of youtube to play videos
     elif user_input in ["youtube"]:
         try:
             user_input = input("Enter the video name to play : ")
