@@ -56,6 +56,7 @@ notification.notify(
 # Asks for user to enter the command for the jarvis to acccess the features of it
 while 1:
     print("How can I help you", C)
+    # Lowers the words of the user
     user_input = input().lower()
     
     if user_input == ("hello") or user_input == ("hi") or user_input == ("hey") or user_input == ("jarvis"):
