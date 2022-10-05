@@ -102,6 +102,7 @@ while 1:
         else:
             print("Cancelling Restart",C)
             
+    # This block of code is for performing the arthimatic operations in jarvis 
     elif user_input in ["add" or "subtract" or "multiply" or "divide" or "modulus" or "exponentiation" or "floor division"]:
         print("Do you want me to perform arthimatic operations ?")
         Y = input("yes/no\n>>").lower()
