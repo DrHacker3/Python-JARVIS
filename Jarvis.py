@@ -147,6 +147,7 @@ while 1:
             else:
                 print("Invalid number")
                       
+    # Below code is for performing open application function which opens the application on user input
     elif user_input in ["open" or "application"]:
         print("Do you want me to open an application?")
         Y = input("yes/no\n>>").lower()
