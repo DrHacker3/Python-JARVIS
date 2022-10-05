@@ -212,6 +212,7 @@ while 1:
         print("I can play 2 games : \n1- Snake Water Gun\n2- Random Number Guess")
         Y = int(input())
         if Y == (1):
+          # if user enters 1 then the snake water gun game starts 
             print('''
            .---. .-. .-.  .--.  ,-. .-.,---.   .-.  .-.  .--.  _______ ,---.  ,---.      ,--,   .-. .-..-. .-. 
           ( .-._)|  \| | / /\ \ | |/ / | .-'   | |/\| | / /\ \|__   __|| .-'  | .-.\   .' .'    | | | ||  \| | 
