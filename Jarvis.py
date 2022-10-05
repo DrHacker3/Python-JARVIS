@@ -7,6 +7,10 @@ import requests
 import numbers
 import pywhatkit
 import random
+import phonenumbers as ph
+from phonenumbers import carrier
+from phonenumbers import geocoder
+from phonenumbers import timezone
 
 os.system("color 0c")
 print('''
