@@ -125,6 +125,7 @@ while 1:
                 B = int(input("Enter second number : "))
                 print("The multiplication of two numbers are : ",A*B)
             elif Y ==("4"):
+                # This set of code is responsible for performing the Division in jarvis
                 A = int(input("Enter first number : "))
                 B = int(input("Enter second number : "))
                 print("The division of two numbers are : ",A/B)
