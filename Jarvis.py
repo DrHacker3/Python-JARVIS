@@ -20,6 +20,7 @@ print('''
                                                                                           
 ''')
  
+ # JARVIS is ready to be your assistant
 name = input("Enter name: ").capitalize()
 print("Hello", name, "I am JARVIS, your personal asssistant")
 IconPath = r"Jarvis_logo_ico.ico"
