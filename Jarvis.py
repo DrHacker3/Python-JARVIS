@@ -197,6 +197,7 @@ while 1:
         except:
             print("An unexpected error occurred")
             
+    # This set of code can schedule a whats app message . But you should have whats app login in your web browser in order to schedule a whatsapp message
     elif user_input in ["whatsapp"]:
         numberr = input("Enter the number with country code : ")
         message = input("Enter the message you want to send :\n")
