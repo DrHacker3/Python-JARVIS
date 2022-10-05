@@ -299,6 +299,13 @@ while 1:
 
             print(f"You guessed the number in {guesses} guesses")
             
+    elif user_input == ("phonenumber"):
+        number = input("Enter the phone number with county code: ")
+        number = ph.parse(number)
+        print(timezone.time_zones_for_number(number))
+        print(carrier.name_for_number(number, "en"))
+        print(geocoder.description_for_number(number, "en"))
+            
     elif user_input == ("help"):
         # Help command is for displaying all the commands a user can input for jarvis to work 
         print("It Seems That You Need Help")
