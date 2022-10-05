@@ -152,6 +152,7 @@ while 1:
         print("Do you want me to open an application?")
         Y = input("yes/no\n>>").lower()
         if Y == ("yes"):
+            # Takes the input of the name of the application to open
             app = input("ENTER APPLICATION TO OPEN: ").strip()
         if input:
             run(app)
