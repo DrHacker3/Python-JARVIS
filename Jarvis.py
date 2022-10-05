@@ -135,6 +135,7 @@ while 1:
                 B = int(input("Enter second number : "))
                 print("The modulus of two numbers are : ",A%B)
             elif Y ==("6"):
+                # This set of code is responsible for performing the Exponential in jarvis
                 A = int(input("Enter first number : "))
                 B = int(input("Enter second number : "))
                 print("The exponential of two numbers are : ",A**B)
