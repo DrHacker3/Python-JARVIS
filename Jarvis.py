@@ -159,6 +159,7 @@ while 1:
         else:
             print("Please check the application name you have typed")
             
+    # This set of code returns the weather condition of your city
     elif user_input in ["weather"]:
         headers = {
          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
