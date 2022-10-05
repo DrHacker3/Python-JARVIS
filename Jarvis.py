@@ -299,6 +299,7 @@ while 1:
 
             print(f"You guessed the number in {guesses} guesses")
             
+    # This set of returns the details of a phone number
     elif user_input == ("phonenumber"):
         number = input("Enter the phone number with county code: ")
         number = ph.parse(number)
