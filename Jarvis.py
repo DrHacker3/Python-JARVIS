@@ -80,6 +80,7 @@ while 1:
         os.system('TASKKILL /F /IM py.exe')
         break
 
+    # if the user enters the shutdown commands then jarvis asks for confirmation and if the user reply yes then it shutdown the computer
     elif user_input == ("shutdown"):
         print("Are you sure", C)
         Y = input("yes/no\n>>").lower()
