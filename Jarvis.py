@@ -62,7 +62,8 @@ while 1:
     # if the user enter the following words to interact with jarvis it can reply with hi or hey to the user for intraction
     if user_input == ("hello") or user_input == ("hi") or user_input == ("hey") or user_input == ("jarvis"):
         print("Hello", C)
-
+    
+    # if the user types open google command this opens the browsers with the google search page
     elif user_input == ("open google"):
         os.system('start chrome www.google.com')
         print("Opening chrome to google.com")
