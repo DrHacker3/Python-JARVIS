@@ -91,6 +91,7 @@ while 1:
         else:
             print("Canceling shutdown", C)
             
+    # if the user enters the command restart then it asks for confirmation for restarts and if the user agrees then it restarts the computer
     elif user_input ==("restart"):
         print("Are you sure",C)
         Y = input("yes/no\n>>").lower()
