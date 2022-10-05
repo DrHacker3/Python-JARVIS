@@ -59,6 +59,7 @@ while 1:
     # Lowers the words of the user
     user_input = input().lower()
     
+    # if the user enter the following words to interact with jarvis it can reply with hi or hey to the user for intraction
     if user_input == ("hello") or user_input == ("hi") or user_input == ("hey") or user_input == ("jarvis"):
         print("Hello", C)
 
