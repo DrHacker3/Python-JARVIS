@@ -316,4 +316,5 @@ while 1:
                    "help"  ---------->  Shows all the commands of JARVIS''')
             
     else:
+      # if the above command is not entered then it prints the following line
         print("I'm not sure I understand", C)
