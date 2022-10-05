@@ -269,6 +269,7 @@ while 1:
                 print("You loose!")
         
         if Y == (2):
+          # if the user enters the 2 then the random number guess game starts
             print('''
       ____     _    _   _ ____   ___  __  __   _   _ _   _ __  __ ____  _____ ____     ____ _   _ _____ ____ ____  
      |  _ \   / \  | \ | |  _ \ / _ \|  \/  | | \ | | | | |  \/  | __ )| ____|  _ \   / ___| | | | ____/ ___/ ___| 
