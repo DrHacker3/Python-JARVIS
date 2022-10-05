@@ -207,6 +207,7 @@ while 1:
              message,
              hour, minute)
         
+    # This set of code gets activated once the user enters the game command it displays two of the game available
     elif user_input in ["game"]:
         print("I can play 2 games : \n1- Snake Water Gun\n2- Random Number Guess")
         Y = int(input())
