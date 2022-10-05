@@ -110,6 +110,7 @@ while 1:
             print("Select the Operation to perform : \n1) Addition\n2) Subtraction\n3) Multiplication\n4) Division\n5) Modulus\n6) Exponential\n7) Floor Division\n>>")
             Y = input().lower()
             if Y ==("1"):
+                # This set of code performs the addition arthimatic operations in jarvis              
                 A = int(input("Enter first number : "))
                 B = int(input("Enter second number : "))
                 print("The sum of two numbers are : ",A+B)
