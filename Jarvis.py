@@ -36,6 +36,7 @@ notification.notify(
     toast = False  
     )
 
+# Get the icon path for the Hello notification and display the notification
 print("Do you prefer Sir or Miss")
 C = input().capitalize()
 print("Understood", C)
